@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables (contains secrets — never commit these)
+.env
+
+# SQLite database file (auto-generated, no need to track)
+server/database.db
+
+# Vite build output
+dist/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
