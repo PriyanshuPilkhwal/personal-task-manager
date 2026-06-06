@@ -54,6 +54,7 @@ personal-task-manager/
 │   ├── server.js
 │   └── database.db       # Auto-generated
 └── README.md
+```
 
 ## API Endpoints
 
