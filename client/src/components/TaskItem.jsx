@@ -57,20 +57,25 @@ export default function TaskItem({ task, onToggleStatus, onDelete, onEdit }) {
           )}
         </div>
 
-        <div className="flex items-center gap-2 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 sm:opacity-100">
-          <button
-            onClick={() => onEdit(task)}
-            className="p-2 text-neutral-400 hover:text-white hover:bg-white/20 rounded-xl transition-all duration-300 hover:scale-105"
-          >
-            <Pencil size={16} />
-          </button>
-          <button
-            onClick={() => onDelete(task.id)}
-            className="p-2 text-neutral-400 hover:text-red-400 hover:bg-white/20 rounded-xl transition-all duration-300 hover:scale-105"
-          >
-            <Trash2 size={16} />
-          </button>
-        </div>
+       {/* Action Buttons */}
+<div className="flex items-center gap-1 flex-shrink-0">
+  <button
+    onClick={() => onEdit(task)}
+    className="p-1.5 text-blue-400 hover:text-blue-600
+               hover:bg-blue-50 rounded-lg transition-colors"
+    title="Edit task"
+  >
+    <Pencil size={16} />
+  </button>
+  <button
+    onClick={() => onDelete(task.id)}
+    className="p-1.5 text-red-400 hover:text-red-600
+               hover:bg-red-50 rounded-lg transition-colors"
+    title="Delete task"
+  >
+    <Trash2 size={16} />
+  </button>
+</div>
       </div>
     </div>
   );
