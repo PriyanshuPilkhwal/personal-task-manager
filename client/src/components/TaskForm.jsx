@@ -94,7 +94,8 @@ export default function TaskForm({ onTaskCreated, onTaskUpdated, editingTask, on
        <div>
           <input
             type={dueDate ? "date" : "text"}
-            placeholder="Due date (optional)"
+            placeholder="Due date *"
+            required
             onFocus={(e) => e.target.type = "date"}
             onBlur={(e) => {
               if (!dueDate) e.target.type = "text";
