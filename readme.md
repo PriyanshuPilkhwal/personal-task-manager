@@ -35,8 +35,9 @@ A full-stack task management application built with React, Node.js, Express, and
 - Fully persistent data via SQLite database
 
 ## Project Structure
+```text
 personal-task-manager/
-├── client/                   # React frontend
+├── client/               # React frontend
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── TaskForm.jsx
@@ -45,13 +46,13 @@ personal-task-manager/
 │   │   │   └── TaskItem.jsx
 │   │   ├── App.jsx
 │   │   ├── api.js
-│   │   └── main.jsx
+│   │   └── main.js
 │   └── ...
-├── server/                   # Node.js backend
+├── server/               # Node.js backend
 │   ├── db.js
 │   ├── routes.js
 │   ├── server.js
-│   └── database.db           # Auto-generated
+│   └── database.db       # Auto-generated
 └── README.md
 
 ## API Endpoints

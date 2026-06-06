@@ -91,9 +91,14 @@ export default function TaskForm({ onTaskCreated, onTaskUpdated, editingTask, on
           />
         </div>
         
-        <div>
+       <div>
           <input
-            type="date"
+            type={dueDate ? "date" : "text"}
+            placeholder="Due date (optional)"
+            onFocus={(e) => e.target.type = "date"}
+            onBlur={(e) => {
+              if (!dueDate) e.target.type = "text";
+            }}
             value={dueDate}
             onChange={e => setDueDate(e.target.value)}
             className="w-full px-4 py-3 bg-black/40 border border-white/10 rounded-xl text-sm text-neutral-300 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all [color-scheme:dark]"
