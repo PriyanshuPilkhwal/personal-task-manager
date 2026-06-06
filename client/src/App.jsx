@@ -3,6 +3,8 @@ import { fetchTasks, deleteTask, updateTask } from './api';
 import TaskForm from './components/TaskForm';
 import FilterBar from './components/FilterBar';
 import TaskList from './components/TaskList';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   const [tasks, setTasks]       = useState([]);
